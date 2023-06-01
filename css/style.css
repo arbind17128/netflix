@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color:#e50914;
+}
+body {
+    color: white;
+}
+
+.showcase {
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background: url(../img/bg.jpg) no-repeat center center/cover;
+
+}
+.showcase .showcase-top {
+    position: relative ;
+    height: 90px;
+    z-index: 2;
+}
+.showcase .showcase-top img{
+   width: 170px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%) ;
+}
+.showcase .showcase-top a {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    background: #e50914;
+    color: #fff;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.45);
+    border-radius: 2px;
+
+}
+.btn:hover {
+    opacity: 0.9;
+
+}    
+.btn-lx {
+    font-size: 1rem;
+    padding: 0.8rem 2.1rem;
+    text-transform: uppercase;
+}
+.showcase-content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    z-index: 2;
+    
+}
+.showcase-content h1{
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+.showcase-content  p {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+}
+.showcase::after {
+    content: '';
+    position: absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.6);
+    box-shadow: inset 120px 100px 250px #000000;
+}
+
+/* tab */
+
+.tab {
+   background: #141414;
+   border-bottom: 1px solid white;
+  
+   
+}
+.tab .container {
+    display: grid;
+    max-width: 70%;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    margin: auto;
+    overflow: hiden;
+   
+    
+}
+.tab .container > div{
+    padding: 2rem;
+   
+    margin: 1rem 2rem;
+}
+
+.tab .container > div:hover {
+    color: rgb(242, 188, 188);
+    border-bottom: 2px solid #e50914 ;
+    cursor: pointer;
+  
+}
+.tab-border {
+
+}
+.tab .container > div p{
+    font-weight: 100;
+    font-size: 1.6rem;
+    padding-top: 1rem;
+}
+.tab-content {
+    background: black;
+    padding-top: 2rem;
+}
+#tab-content-1 .tab-content-1-inner {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:2rem;
+}
+#tab-content-1 .tab-content-1-inner img {
+    width: 400px;
+    
+}
+#tab-content-1 .tab-content-1-inner p{
+    font-weight: 100;
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+}
+#tab-content-1 .tab-content-1-inner > div {
+    padding-left: 2rem;
+}
+.container {
+    max-width: 70%;
+    margin: auto;
+}
+#tab-content-2 .tab-content-2-innner-top{
+    display: grid;
+    grid-template-columns: repeat(1,2fr 1fr);
+}
+
+#tab-content-2  img {
+ height: 200px;
+ width: 350px;
+
+}
+#tab-content-2 .para-middle{
+    font-weight: 100;
+    font-size: 1.6rem;
+}
+#tab-content-2 .tab-content-2-innner-button {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    padding: 2rem 0 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.table{
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.table thead th {
+    text-transform: uppercase;
+    padding: 0.8rem;
+}
+.table tbody tr td {
+    color: #999;
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+}
+.table tbody tr:nth-child(odd) {
+    background: #222;
+}
+#tab-content-3 p{
+    font-weight: 100;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+#tab-content-3.tab-content-3-innner-top-1 {
+    
+}
+.center {
+width: 30%;
+display: block;
+margin: auto;
+
+}
+.footer {
+    max-width: 80%;
+    margin:  auto;
+    padding-bottom: 0.5rem;
+    padding-top: 2rem;
+ 
+}
+.footer p{
+    padding-bottom: 1.6rem;
+    font-size: 1.6rem;
+}
+.footer-main{
+    background-color: #222;
+}
+.footer ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0 2px;
+    list-style: none;
+
+}
+.footer ul li a{
+    color: #999;
+    text-decoration: none;
+    line-height: 1.9;
+}
